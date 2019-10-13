@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="T1807EHelloUWP.Pages.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T1807EHelloUWP.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid >
+        <ScrollViewer>
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="LOGIN" FontSize="30" Margin="4" TextAlignment="Center"/>
+                <TextBlock Width="300">Email</TextBlock>
+                <TextBox Width="300" x:Name="Email" ></TextBox>
+                <TextBlock Width="300">Password</TextBlock>
+                <PasswordBox Width="300" x:Name="Password" ></PasswordBox>
+                <RelativePanel>
+                    <Button Margin="70, 20, 10, 0" x:Name="ButtonLogin" Click="ButtonLogin_OnClick">Login</Button>
+                    <Button Margin="0,20,10,0" RelativePanel.RightOf="ButtonLogin"   Click="GoToSignUp_OnClick" >Register</Button>
+                </RelativePanel>
+               
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

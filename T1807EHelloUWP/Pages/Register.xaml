@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="T1807EHelloUWP.Pages.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T1807EHelloUWP.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel HorizontalAlignment="Center" >
+        <TextBlock Text="Register" FontSize="20" Margin="4" TextAlignment="Center"/>
+        <TextBlock  TextWrapping="Wrap" Text="Avata: "/>
+        <Image x:Name="ImageControl" Width="50" Height="50"/>
+        <TextBlock Visibility="Collapsed" x:Name="ImageUrl"></TextBlock>
+        <TextBlock  TextWrapping="Wrap" Text="E-Mail: "/>
+        <TextBox x:Name="txtEmail" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="First Name: " />
+        <TextBox x:Name="txtFirstName" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="Last Name: "/>
+        <TextBox x:Name="txtLastName" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="Usename: "/>
+        <TextBox x:Name="Usename" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="Password: "/>
+        <TextBox x:Name="Password" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="Title: " />
+        <StackPanel Orientation="Horizontal">
+            <RadioButton x:Name="nam" Content="Mr."/>
+            <RadioButton x:Name="nu" Content="Mrs." />
+        </StackPanel>
+        <DatePicker x:Name="TargetInstallDate" Header="Target install Date"></DatePicker>
+        <TextBlock  TextWrapping="Wrap" Text="Company: "/>
+        <TextBox x:Name="txtCompany" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="Phone Number: " />
+        <TextBox x:Name="txtPhoneNumber" TextWrapping="Wrap" />
+        <RelativePanel>
+            <Button Margin="30, 20, 10, 0" x:Name="Buttonregister" Click="ButtonBase_OnClick">Register</Button>
+            <Button Margin="0,20,10,0" RelativePanel.RightOf="Buttonregister"   Click="Button_click" >Click to capture image</Button>
+        </RelativePanel>
+    </StackPanel>
+
+</Page>
